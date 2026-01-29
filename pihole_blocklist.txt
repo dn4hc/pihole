@@ -1,9 +1,74 @@
-ax.phobos.apple.com.edgesuite.net captive.apple.com
-developer.apple.com gsp1.apple.com ocsp.apple.com
-www.appleiphonecell.com ocsp.apple.com ocsp2.apple.com
-iprofiles.apple.com mdmenrollment.apple.com deviceenrollment.apple.com
-acmdm.apple.com albert.apple.com mesu.apple.com valid.apple.com
-crl.apple.com certs.apple.com appattest.apple.com vpp.itunes.apple.com
-guzzoni-apple-com.v.aaplimg.com gdmf.apple.com axm-app.apple.com
-comm-cohort.ess.apple.com comm-main.ess.apple.com mesu.apple.com
+# Pi hole domain blacklist
+# Warning: Blocking many of these will break Apple services like WiFi captive portal checks, software updates, MDM enrollment, and certificate validation.
+
+# Apple CDN host often used for iTunes and App Store related downloads and assets via Akamai
+#ax.phobos.apple.com.edgesuite.net
+
+# Apple captive portal and internet connectivity check endpoint used by iOS and macOS
+#captive.apple.com
+
+# Apple Developer website and related services
+developer.apple.com
+
+# Apple system service endpoint used by iOS and macOS for various Apple online services
+gsp1.apple.com
+
+# Apple certificate status check endpoint (OCSP), used during TLS certificate validation
+ocsp.apple.com
+
+# Secondary Apple certificate status check endpoint (OCSP)
+ocsp2.apple.com
+
+# Appears to be a non Apple branded domain, not an official Apple service hostname
+#www.appleiphonecell.com
+
+# Apple configuration profiles hosting and retrieval (profiles and enrollment related)
+iprofiles.apple.com
+
+# Apple MDM enrollment endpoint used for mobile device management onboarding
+mdmenrollment.apple.com
+
+# Apple Automated Device Enrollment service (DEP) for managed device enrollment
+deviceenrollment.apple.com
+
+# Apple Cloud MDM service endpoint used by managed devices
+acmdm.apple.com
+
+# Apple device activation and verification service used during iPhone and iPad setup
+albert.apple.com
+
+# Apple mobile software update service used by iOS and macOS to find and download updates
+mesu.apple.com
+
+# Apple certificate validation related endpoint used by Apple trust services
+valid.apple.com
+
+# Apple certificate revocation list distribution endpoint (CRL)
+crl.apple.com
+
+# Apple certificate distribution endpoint for Apple issued certificates
+certs.apple.com
+
+# Apple App Attest service used by apps to attest device integrity
+appattest.apple.com
+
+# Apple Volume Purchase Program endpoint for managed app licensing and distribution
+vpp.itunes.apple.com
+
+# Apple Siri related hostname used for Siri requests and assets in some regions
+#guzzoni-apple-com.v.aaplimg.com
+
+# Apple software update and device management metadata feed used by Apple devices
+#gdmf.apple.com
+
+# Apple system endpoint used by some Apple apps for messaging or metrics services
+axm-app.apple.com
+
+# Apple communication services endpoint, function varies by region and OS feature
+comm-cohort.ess.apple.com
+
+# Apple communication services endpoint, function varies by region and OS feature
+comm-main.ess.apple.com
+
+# Apple service endpoint often associated with personalization, diagnostics, or feature experiments
 dejavu.apple.com
